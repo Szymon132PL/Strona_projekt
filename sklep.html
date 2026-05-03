@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Jaślanka</title>
+
+<style>
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial;
+    background-image: url('tlo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* TOPBAR */
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 80px;
+    background-image: url('drewno.png');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid #3b220f;
+    box-shadow: inset 0 4px 8px rgba(0,0,0,0.35),
+                inset 0 -4px 8px rgba(255,255,255,0.08);
+}
+.menu a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+.logo-img{
+    height: 160px;
+    width: auto;
+}
+
+/* PRZYCISKI – IDENTYCZNE JAK NA SCREENIE */
+.buttons{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px; /* odstęp jak u ciebie */
+}
+
+.btn{
+    width: 999px;         /* szerokość — JAK NA TWOIM SCREENIE */
+    height: 260px;        /* wysokość — JAK NA TWOIM SCREENIE */
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn img{
+    width: 140%;
+    height: 160%;
+    object-fit: contain; /* NIE ROZCIĄGA, NIE UCINA — ZAWSZE IDEALNE */
+    display: block;
+}
+
+/* STOPKA */
+.footer{
+    background: #1f1f1f;
+    color: white;
+    margin-top: auto;
+    padding: 30px 20px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.footer-box{
+    background: #2c2c2c;
+    padding: 15px;
+    border-radius: 10px;
+}
+.footer-box h3{
+    margin-top: 0;
+    color: orange;
+}
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div class="menu">
+        <a href="sklep.html">Sklep</a>
+        <a href="onas.html">O nas</a>
+        <a href="praca.html">Praca</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="koszyk.html">Koszyk</a>
+    </div>
+    <a href="index.html" class="brand">
+        <img src="logo.png" class="logo-img">
+        Jaślanka
+    </a>
+</div>
+
+<!-- PRZYCISKI – IDENTYCZNE JAK NA SCREENIE -->
+<div class="buttons">
+    <a href="szynki_wedzonki.html" class="btn"><img src="szynki_wedzonki.png"></a>
+    <a href="kielbasy3.html" class="btn"><img src="kielbasy.png"></a>
+    <a href="kaszanki_itp.html" class="btn"><img src="kaszanki_pasztety_salcesony_smalec.png"></a>
+    <a href="miesa.html" class="btn"><img src="miesa.png"></a>
+    <a href="mielonki.html" class="btn"><img src="mielonki.png"></a>
+</div>
+
+<!-- STOPKA -->
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-box">
+            <h3>Główne sklepy</h3>
+            <p>ul. Lwowska 3<br>ul. Rynek 15</p>
+        </div>
+        <div class="footer-box">
+            <h3>Kontakt</h3>
+            <p>Tel: 532 503 650<br>Email: masarnia_jaślanka@gmail.com</p>
+        </div>
+        <div class="footer-box">
+            <h3>Informacje</h3>
+            <p>Godziny otwarcia:<br>Pn–Sb 6:00–22:00</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2026 Jaślanka - wszystkie prawa zastrzeżone
+    </div>
+</div>
+
+</body>
+</html>
+

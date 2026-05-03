@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaślanka</title>
+
+<style>
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 🔶 GÓRNY PASEK — WERSJA Z POPRZEDNIEGO KODU */
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 80px;
+    box-sizing: border-box;
+
+    background-image: url("drewno.png");
+    background-size: cover;
+    background-position: center;
+
+    box-shadow:
+        inset 0 4px 8px rgba(0,0,0,0.35),
+        inset 0 -4px 8px rgba(255,255,255,0.08);
+
+    border-bottom: 3px solid #3b220f;
+}
+
+.menu a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    font-size: 18px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* LOGO — DUŻE JAK POPRZEDNIO */
+.logo-img{
+    height: 160px;
+    width: auto;
+    display: block;
+}
+
+/* 🖼️ TŁO + GRAFIKA NA CAŁĄ WYSOKOŚĆ */
+.hero {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: url("tlo.png") no-repeat center center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img.hero-bg {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    display: block;
+}
+
+/* PRZYCISK APLIKUJ */
+.aplikuj-btn {
+    position: absolute;
+    left: 74%;
+    top: 94%;
+    transform: translate(-50%, -50%);
+    width: 18vw;
+    max-width: 260px;
+    min-width: 100px;
+    background: none;
+    border: none;
+}
+
+.aplikuj-btn img {
+    width: 100%;
+    height: auto;
+}
+
+/* STOPKA */
+.footer{
+    background: #1f1f1f;
+    color: white;
+    padding: 30px 20px;
+    margin-top: auto;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-box{
+    background: #2c2c2c;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.footer-box h3{
+    margin-top: 0;
+    color: orange;
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* TELEFONY */
+@media (max-width: 768px){
+
+    .topbar{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .logo-img{
+        height: 100px;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+    <div class="menu">
+        <a href="sklep.html">Sklep</a>
+        <a href="onas.html">O nas</a>
+        <a href="praca.html">Praca</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="koszyk.html">Koszyk</a>
+    </div>
+
+    <a href="index.html" class="brand">
+        <img src="logo.png" class="logo-img">
+        Jaślanka
+    </a>
+</div>
+
+<div class="hero">
+    <img src="wedliniarz_tlo.png" class="hero-bg">
+
+    <a class="aplikuj-btn" href="wedliniarz_aplikuj.html">
+        <img src="wedliniarz_aplikuj.png" alt="Aplikuj">
+    </a>
+</div>
+
+<div class="footer">
+    <div class="footer-container">
+        
+        <div class="footer-box">
+            <h3>Główne sklepy</h3>
+            <p>ul. Lwowska 3<br>ul. Rynek 15</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Kontakt</h3>
+            <p>Tel: 532 503 650<br>Email: masarnia_jaślanka@gmail.com</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Informacje</h3>
+            <p>Godziny otwarcia:<br>Pn–Sb 6:00–22:00</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Jaślanka — wszystkie prawa zastrzeżone
+    </div>
+</div>
+
+</body>
+</html>
