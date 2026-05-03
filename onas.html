@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Jaślanka – O nas</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* 🔥 TŁO NA CAŁY EKRAN */
+    background-image: url("tlo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* 🔶 GÓRNY PASEK - DREWNO */
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 80px;
+    box-sizing: border-box;
+
+    background-image: url("drewno.png");
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: 3px solid #3b220f;
+}
+
+/* MENU */
+.menu a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* LOGO + NAZWA */
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.logo-img{
+    height: 150px;
+    width: auto;
+}
+
+/* 🔶 DREWNIANE KARTY NA TEKST */
+.wood-box{
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-image: url("drewno.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    color: white;
+    font-size: 21px;
+    line-height: 1.6;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* NAGŁÓWKI W BOXACH */
+.wood-box h2{
+    margin-top: 0;
+    font-size: 28px;
+    color: #ffdb8c;
+}
+
+/* STOPKA */
+.footer{
+    background: #1f1f1f;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-box{
+    background: #2c2c2c;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.footer-box h3{
+    margin-top: 0;
+    color: orange;
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+@media (max-width: 700px){
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+<!-- 🔝 TOPBAR -->
+<div class="topbar">
+    <div class="menu">
+        <a href="sklep.html">Sklep</a>
+        <a href="onas.html">O nas</a>
+        <a href="praca.html">Praca</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="koszyk.html">Koszyk</a>
+    </div>
+
+    <a href="index.html" class="brand">
+        <img src="logo.png" class="logo-img">
+        Jaślanka
+    </a>
+</div>
+
+<!-- ======================= TREŚĆ ======================= -->
+
+<div class="wood-box">
+    <h2>Kim jesteśmy?</h2>
+    Nasza masarnia działa na terenie Jasła, gdzie mieści się główny zakład produkcyjny przy ulicy Lwowskiej 3. 
+    Prowadzimy również sklepy firmowe – przy ul. Lwowskiej 3 oraz na Rynku 15, a także stoiska w lokalnych marketach MPM.  
+    Naszą misją jest tworzenie zdrowych, naturalnych i tradycyjnych wyrobów mięsnych według rodzinnych receptur.
+</div>
+
+<div class="wood-box">
+    <h2>Nasza filozofia</h2>
+    Stawiamy na lokalnych dostawców, ekologiczne gospodarstwa oraz czysty skład produktów.  
+    Nasze wyroby to mięso, naturalne przyprawy i sól – bez fosforanów, glutaminianu sodu, soi czy sztucznych wypełniaczy.  
+    Dla nas liczy się smak, tradycja i uczciwość produkcji.
+</div>
+
+<div class="wood-box">
+    <h2>Zespół Jaślanki</h2>
+    • Aleksander Brągiel – rzeźnik, wędliniarz <br>
+    • Albert Czeluśniak – księgowy, prezes <br>
+    • Szymon Sztaba – marketing i promocja
+</div>
+
+<div class="wood-box">
+    <h2>Nasze produkty</h2>
+    Oferujemy szeroki wybór świeżych wyrobów, w tym:<br>
+    • mięso wołowe <br>
+    • mięso wieprzowe <br>
+    • mięso drobiowe <br>
+    • ekologiczne kiełbasy, szynki, boczki, schaby i pasztety <br>
+    • wędliny dojrzewające bez konserwantów <br>
+    • produkty tradycyjne według receptur prababci <br><br>
+
+    W naszej ofercie znajdziesz również:<br>
+    • wyjątkowo soczysty, jedyny w Polsce stek wołowy o tak intensywnym smaku <br>
+    • „Prosię pieczone w całości” – hit imprez plenerowych
+</div>
+
+<div class="wood-box">
+    <h2>Rynek i sezonowość</h2>
+    Z roku na rok rośnie zapotrzebowanie na naturalne, swojskie wyroby.  
+    Największy ruch notujemy w czasie świąt Wielkanocy i Bożego Narodzenia (szynki, schaby, kiełbasy),  
+    a także podczas sezonu grillowego (kiełbasy, kaszanki, marynowane mięsa).
+</div>
+
+<div class="wood-box">
+    <h2>Dostawa i promocje</h2>
+    • Sprzedaż w sklepach stacjonarnych i online <br>
+    • Własna firma kurierska – dostawa pod drzwi <br>
+    • Wysyłka w 24h, hermetyczne pakowanie <br>
+    • Darmowa dostawa od 100 zł <br><br>
+
+    Dla stałych klientów oferujemy: <br>
+    • kartę stałego klienta <br>
+    • deski degustacyjne <br>
+    • produkty tygodnia <br>
+    • promocje 2+1 (trzeci produkt za 50%)
+</div>
+
+<!-- ======================= STOPKA ======================= -->
+
+<div class="footer">
+    <div class="footer-container">
+        
+        <div class="footer-box">
+            <h3>Główne sklepy</h3>
+            <p>ul. Lwowska 3<br>ul. Rynek 15</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Kontakt</h3>
+            <p>Tel: 532 503 650<br>Email: masarnia_jaślanka@gmail.com</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Informacje</h3>
+            <p>Pn–Sb 6:00 – 22:00</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Jaślanka – wszystkie prawa zastrzeżone
+    </div>
+</div>
+
+</body>
+</html>
